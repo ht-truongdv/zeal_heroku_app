@@ -5,25 +5,17 @@ const cors = require("cors");
 
 const app = express();
 
-//here we are configuring dist to serve app files
-app.use('/', serveStatic(path.join(__dirname, '/dist')))
-
-// this * route is to serve project on different page routes except root `/`
-app.get(/.*/, function (req, res) {
-	res.sendFile(path.join(__dirname, '/dist/index.html'))
-})
-
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:8080/api"
 };
-
 app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
 app.use(express.json());  /* bodyParser.json() is deprecated */
-
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));   /* bodyParser.urlencoded() is deprecated */
+app.use('/dist', express.static('dist'));
+app.use('/src', express.static('src')); 
 
 const db = require("./app/models");
 db.sequelize.sync();
@@ -32,6 +24,13 @@ db.sequelize.sync();
 //   console.log("Drop and re-sync db.");
 // });
 
+//here we are configuring dist to serve app files
+app.use('/', serveStatic(path.join(__dirname, '/dist')))
+
+// this * route is to serve project on different page routes except root `/`
+// app.get(/.*/, function (req, res) {
+// 	res.sendFile(path.join(__dirname, '/dist/index.html'))
+// })
 // simple route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
