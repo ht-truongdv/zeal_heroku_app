@@ -1,3 +1,4 @@
+// import { createMemoryHistory, createRouter } from "vue-router";
 import { createWebHistory, createRouter } from "vue-router";
 
 const routes =  [
@@ -20,6 +21,7 @@ const routes =  [
 ];
 
 const router = createRouter({
+  // history: createMemoryHistory(),
   history: createWebHistory(),
   routes,
 });
