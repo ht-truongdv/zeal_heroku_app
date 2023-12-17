@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8080/api"
+  origin: "/api"
 };
 app.use(cors(corsOptions));
 
