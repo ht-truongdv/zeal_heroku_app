@@ -10,7 +10,6 @@ var corsOptions = {
   origin: "/api"
 };
 app.use(cors(corsOptions));
-
 // parse requests of content-type - application/json
 app.use(express.json());  /* bodyParser.json() is deprecated */
 // parse requests of content-type - application/x-www-form-urlencoded

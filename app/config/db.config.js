@@ -1,13 +1,14 @@
+require('dotenv').config();
 module.exports = {
-  HOST: "ec2-3-210-173-88.compute-1.amazonaws.com",
-  USER: "nmkkjfiatgtleo",
-  PASSWORD: "bf37917f43b6223f3eb3aa5f9be073111002e275ac82d9ca9dd27745275e0047",
-  DB: "dbdh7imkv4p87t",
+  HOST: process.env.DB_HOST || "localhost",
+  USER: process.env.DB_USERNAME || "postgres",
+  PASSWORD: process.env.DB_PASSWORD || "postgres",
+  DB: process.env.DB_NAME || "testdb",
   dialect: "postgres",
-  dialectOptions: {
+  dialectOptions: process.env.STATUS == 'develop' ? {} : {
     ssl: {
-      require: true, // This will help you. But you will see nwe error
-      rejectUnauthorized: false // This line will fix new error
+      require: false,
+      rejectUnauthorized: false
     }
   },
   pool: {
