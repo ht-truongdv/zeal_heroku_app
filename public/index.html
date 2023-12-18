@@ -4,14 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/ogp.png" />
+
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content=""/>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div class="l-wrapper">
+        <header class="l-header">
+            <div class="logo"><a href="/"><img src="<%= BASE_URL %>header_logo.png" alt="logo"/></a></div>
+        </header>
+        <main>
+          <div id="app"></div>
+        </main>
+        <footer class="l-footer">
+            <p class="copyright">&copy;copyright</p>
+        </footer>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>

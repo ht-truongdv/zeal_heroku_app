@@ -15,9 +15,9 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### Run server api nodejs express
 ```
-npm run lint
+node server.js
 ```
 
 ### Customize configuration

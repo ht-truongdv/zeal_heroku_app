@@ -1,6 +1,10 @@
+<style>
+  @import './assets/css/style.css';
+</style>
+
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand navbar-dark bg-dark">
       <router-link to="/" class="navbar-brand">bezKoder</router-link>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -9,8 +13,11 @@
         <li class="nav-item">
           <router-link to="/tutorials/add" class="nav-link">Add</router-link>
         </li>
+        <li class="nav-item">
+          <router-link to="/mock" class="nav-link">モックHTML</router-link>
+        </li>
       </div>
-    </nav>
+    </nav> -->
 
     <div class="container mt-3">
       <router-view />
