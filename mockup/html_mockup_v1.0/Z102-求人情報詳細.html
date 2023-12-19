@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/ogp.png" />
+
+    <title>HTMLモック</title>
+    <meta name="description" content="ジールコミュニケーションズ"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/libs/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<div class="l-wrapper">
+    <header class="l-header">
+        <div class="logo"><a href="index.html"><img src="assets/img/header_logo.png" alt="logo"/></a></div>
+        <div class="right-menu">
+            <a href="Z001-ログイン(login).html" class="hospital-button right-header-button">
+                <i class="bi bi-person-circle"></i>
+                <p>山本　太郎</p>
+            </a>
+            <a href="Z001-ログイン(login).html" class="logout-button right-header-button">
+                <i class="bi bi-box-arrow-right"></i>
+                <p>ログアウト</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="l-inner">
+
+            <h2 class="l-heading text-center">患者個人情報</h2>
+            <div class="confirm-item-box">
+                <div class="item-name">患者ID</div>
+                <div class="inputted">00001111</div>
+            </div>
+            <div class="confirm-item-box">
+                <div class="item-name">氏名</div>
+                <div class="inputted">保険　太郎</div>
+            </div>
+            <div class="confirm-item-box">
+                <div class="item-name">性別</div>
+                <div class="inputted">男性</div>
+            </div>
+            <div class="confirm-item-box">
+                <div class="item-name">生年月日</div>
+                <div class="inputted">1978/12/22（45歳）</div>
+            </div>
+            <div class="confirm-item-box">
+                <div class="item-name">電話番号</div>
+                <div class="inputted">0123456789</div>
+            </div>
+            <div class="confirm-item-box">
+                <div class="item-name">記入者</div>
+                <div class="inputted">保険　太郎</div>
+            </div>
+
+            <h2 class="l-heading text-center">既往歴</h2>
+            <div class="form-item-box">
+                <div class="label"><span class="text">既往歴</span></div>
+                <div class="item item-info">
+                    <p class="note mb-0"><span class="red">｛現在治療中の病気・以前おかかりになった病気｝</span>(+)</p>
+                    <p class="note">陰性の既往症：<span class="red">{選択しない現在治療中の病気・以前おかかりになった病気}</span>(-)</p>
+                </div>
+            </div>
+
+            <div class="form-item-box">
+                <div class="label"><span class="text">喫煙歴</span></div>
+                <div class="item item-info">
+                    <p class="note mb-0">(+)：<span class="red">｛喫煙周りの追加確認内容記入｝</span></p>
+                    <p class="note">(-)</p>
+                </div>
+            </div>
+
+            <div class="form-item-box">
+                <div class="label"><span class="text">薬剤副作用・アレルギー歴</span></div>
+                <div class="item item-info">
+                    <p class="note mb-0">(+)：<span class="red">｛薬剤名・症状名｝</span></p>
+                    <p class="note justify-center">(-) その他の薬剤（おくすり手帳スキャン）：</p>
+
+                    <div class="d-flex justify-center">
+                        <img src="assets/img/img.png" alt="logo" height="240"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-item-box">
+                <div class="label"><span class="text">使用薬</span></div>
+                <div class="item item-info">
+                    <p class="note mb-0"><span class="red">｛「「現在服用中のお薬(常用薬)」についてうかがいます。」に選択した回答｝</span>(+)</p>
+                    <p class="note"><span class="red">{「「現在服用中のお薬(常用薬)」についてうかがいます。」に選択しない回答}</span>(-)</p>
+                </div>
+            </div>
+
+            <div class="confirm-box d-flex justify-center">
+                <a href="#" class="l-btn-base l-btn-active">応募する</a></li>
+            </div>
+        </div>
+    </main>
+    <footer class="l-footer">
+        <p class="copyright">&copy;copyright</p>
+    </footer>
+</div>
+
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>

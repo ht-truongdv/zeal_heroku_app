@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/ogp.png" />
+
+    <title>HTMLモック</title>
+    <meta name="description" content="ジールコミュニケーションズ"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/libs/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<div class="l-wrapper">
+    <header class="l-header">
+        <div class="logo"><a href="index.html"><img src="assets/img/header_logo.png" alt="logo"/></a></div>
+        <div class="right-menu">
+            <a href="Z001-ログイン(login).html" class="hospital-button right-header-button">
+                <i class="bi bi-person-circle"></i>
+                <p>山本　太郎</p>
+            </a>
+            <a href="Z001-ログイン(login).html" class="logout-button right-header-button">
+                <i class="bi bi-box-arrow-right"></i>
+                <p>ログアウト</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="l-inner">
+            <h2 class="l-heading text-center">患者問診票一覧</h2>
+            <div class="d-flex justify-space-between search-table-container">
+                <div class="d-flex date-filter h-100">
+                    <div class="input-date-filter">
+                        <input type="text" id="datepicker-from" autocomplete="off" placeholder="開始">
+                    </div>
+                    <p id="datepicker-middle">~</p>
+                    <div class="input-date-filter">
+                        <input type="text" id="datepicker-to" autocomplete="off" placeholder="終了">
+                    </div>
+                </div>
+                <form method="get" class="patient-search-form mr-5 ml-5 h-100 w-50">
+                    <div class="input-search h-100 w-100 d-grid">
+                        <label>
+                            <input class="h-100" type="text" name="keyword" placeholder="患者検索"/>
+                        </label>
+                    </div>
+                </form>
+                <button type="button" class="l-btn-base l-btn-active p-0 w-25">検索</button>
+            </div>
+
+            <div class="table pt-3">
+                <table>
+                    <thead>
+                    <th class="text-center">求人/イベントNo</th>
+                    <th class="text-center">企業名</th>
+                    <th class="text-center">業種</th>
+                    <th class="text-center">職種</th>
+                    <th class="text-center">事業概要</th>
+                    <th class="text-center">勤務地</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="Z102-求人情報詳細.html">00001111</a></td>
+                        <td><a href="Z102-求人情報詳細.html">テスト企業名</a></td>
+                        <td>美容</td>
+                        <td>職種</td>
+                        <td>事業概要</td>
+                        <td>勤務地</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Z102-求人情報詳細.html">00001111</a></td>
+                        <td><a href="Z102-求人情報詳細.html">テスト企業名</a></td>
+                        <td>ネイルサロン</td>
+                        <td>職種</td>
+                        <td>事業概要</td>
+                        <td>勤務地</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Z102-求人情報詳細.html">00001111</a></td>
+                        <td><a href="Z102-求人情報詳細.html">テスト企業名</a></td>
+                        <td>弁護士・会計士等士業</td>
+                        <td>職種</td>
+                        <td>事業概要</td>
+                        <td>勤務地</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Z102-求人情報詳細.html">00001111</a></td>
+                        <td><a href="Z102-求人情報詳細.html">テスト企業名</a></td>
+                        <td>不動産</td>
+                        <td>職種</td>
+                        <td>事業概要</td>
+                        <td>勤務地</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Z102-求人情報詳細.html">00001111</a></td>
+                        <td><a href="Z102-求人情報詳細.html">テスト企業名</a></td>
+                        <td>IT・通信</td>
+                        <td>職種</td>
+                        <td>事業概要</td>
+                        <td>勤務地</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Z102-求人情報詳細.html">00001111</a></td>
+                        <td><a href="Z102-求人情報詳細.html">テスト企業名</a></td>
+                        <td>製造</td>
+                        <td>職種</td>
+                        <td>事業概要</td>
+                        <td>勤務地</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination-custom">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end gap-3">
+                        <li class="page-item">
+                                <a class="page-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link disabled" href="#" tabindex="-1" aria-disabled="true">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <footer class="l-footer">
+        <p class="copyright">&copy;copyright</p>
+    </footer>
+</div>
+
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
