@@ -1,5 +1,5 @@
 <template>
     <div>
-        求人情報詳細画面
+        説明会開催日程選択画面
     </div>
 </template>

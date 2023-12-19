@@ -251,18 +251,9 @@
     <div class="submit-box form-item pb-5 mb-5">
         <ul class="btn-horizontal d-flex justify-center">
             <li>
-                <!--<button type="submit" class="l-btn-base l-btn-active">次へ進む</button>-->
-                <a href="Z011-アンケート回答確認.html" class="l-btn-base l-btn-active">次へ進む</a>
+                <router-link to="/mock/zc0202" class="l-btn-base l-btn-active">次へ進む</router-link>
             </li>
         </ul>
         <!-- <div class="error-text">入力エラーがあります。入力内容を再度ご確認ください。</div> -->
     </div>
   </template>
-  
-  <script>
-    export default {
-    };
-  </script>
-  
-  <style>
-  </style>

@@ -31,7 +31,7 @@
             <div class="submit-box form-item mb-5">
                 <ul class="btn-horizontal d-flex justify-center">
                     <li>
-                        <button class="l-btn-base l-btn-active">ログイン</button>
+                        <router-link to="/mock/zc0301" class="l-btn-base l-btn-active">ログイン</router-link>
                     </li>
                 </ul>
             </div>
@@ -41,23 +41,3 @@
         </form>
     </div>
 </template>
-  
-<script>
-import { defineComponent } from "vue";
-export default defineComponent({
-    name: "zc0101-login",
-    data() {
-        return {
-
-        };
-    },
-    methods: {
-        loginHandle() {
-            console.log('clicked login');
-            this.$router.push('/mock/zc0301');
-        }
-    }
-});
-</script>
-  
-<style></style>

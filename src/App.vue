@@ -4,23 +4,26 @@
 
 <template>
   <div id="app">
-    <!-- <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <router-link to="/" class="navbar-brand">bezKoder</router-link>
-      <div class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <router-link to="/tutorials" class="nav-link">Tutorials</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/tutorials/add" class="nav-link">Add</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/mock" class="nav-link">モックHTML</router-link>
-        </li>
-      </div>
-    </nav> -->
-
-    <div class="container mt-3">
-      <router-view />
+    <div class="l-wrapper">
+        <header class="l-header">
+            <div class="logo"><a href="/"><img src="./assets/img/header_logo.png" alt="logo"/></a></div>
+            <div class="right-menu">
+                <a href="#" class="hospital-button right-header-button">
+                    <i class="bi bi-person-circle"></i>
+                    <p>山本太郎</p>
+                </a>
+                <router-link to="/mock/zc0101" class="logout-button right-header-button">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <p>ログアウト</p>
+                </router-link>
+            </div>
+        </header>
+        <div class="container mt-3">
+          <router-view />
+        </div>
+        <footer class="l-footer fixed-bottom">
+            <p class="copyright">&copy;copyright</p>
+        </footer>
     </div>
   </div>
 </template>
