@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/ogp.png" />
+    
+    <title>CHT</title>
+    <meta name="description" content=""/>
+    
+    <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/libs/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+</head>
+<body>
+
+<div class="l-wrapper">
+    <header class="l-header">
+        <div class="logo"><a href="index.html"><img src="assets/img/header_logo.png" alt="logo"/></a></div>
+    </header>
+    <main>
+        <div class="l-inner l-inner-login">
+            <h2 class="l-heading text-center">パスワードを変更する</h2>
+    
+            <div class="error-box1 mb-2">
+                <p>新しいパスワードを入力してください。少なくとも次のものを含めてください</p>
+                <ul class="form-inital-container_body_criteria_text" style="padding-left: 20px;">
+                    <li>〇 8文字以上</li>
+                    <li>〇 1個以上の文字</li>
+                    <li>〇 1個以上の数字</li>
+                </ul>
+            </div>
+    
+            <form id="my-form">
+                <div class="form-item-box mt-2 pt-2">
+                    <div class="label"><span class="text">新しいパスワード</span></div>
+                    <div class="item">
+                        <div class="input-wrap">
+                            <input type="password" name="password" placeholder="新しいパスワード" maxlength="20" />
+                            <div class="error-text">入力してください。</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item-box no-border-top mt-0">
+                    <div class="label">
+                        <label class="text" for="newPassword">パスワード</label>
+                    </div>
+                    <div class="item">
+                        <div class="input-wrap">
+                            <input type="password" name="new_password" id="newPassword" placeholder="新しいパスワードの確認" maxlength="20" />
+                            <div class="error-text">新しいパスワードと再入力パスワードが一致しません。</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-box form-item mb-5">
+                    <ul class="btn-horizontal d-flex justify-center">
+                        <li>
+                            <button class="l-btn-base l-btn-active" data-toggle="modal" data-target="#exampleModal">パスワードを変更</button>
+                        </li>
+                    </ul>
+                </div>
+                
+            </form>
+        </div>
+    
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="l-heading text-center">パスワード変更完了しました。</h2>
+            <!-- <h5 class="modal-title" id="exampleModalLabel">パスワード変更完了しました。</h5> -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a style="width: 80%;margin: auto;" href="zc0101_login.html" class="l-btn-base l-btn-active" data-dismiss="modal" aria-label="Close">閉じる</a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer class="l-footer">
+        <p class="copyright">&copy;copyright</p>
+    </footer>
+</div>
+
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script>
+    document.getElementById("my-form").addEventListener("click", function(event){
+        event.preventDefault()
+      });
+</script>
+</body>
+</html>
