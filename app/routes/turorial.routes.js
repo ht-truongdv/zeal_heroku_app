@@ -1,11 +1,14 @@
 module.exports = app => {
   const tutorials = require("../controllers/tutorial.controller.js");
-
+  const mailAlert = require("../batches/mail.alert.js");
   var router = require("express").Router();
 
   // Create a new Tutorial
   router.post("/", tutorials.create);
-
+  // send Email
+  router.get("/sendEmail", (req, res)  =>{
+    mailAlert();
+  });
   // Retrieve all Tutorials
   router.get("/", tutorials.findAll);
 

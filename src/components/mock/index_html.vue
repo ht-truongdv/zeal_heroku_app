@@ -9,4 +9,29 @@
   <ul class="pt-4">
     <li><router-link to="/mock/zc0301"><i class="pr-2">zc0301</i>求人情報閲覧（recruitment）</router-link></li>
   </ul>
+  <ul class="pt-4">
+    <li><a @click="sendEmail">send Email</a></li>
+  </ul>
 </template>
+<script>
+import TutorialDataService from "../../services/TutorialDataService";
+export default {
+  name: "index-tesx",
+  data() {
+    return {
+      data: {}
+    }
+  },
+  methods: {
+    sendEmail(){
+      TutorialDataService.sendEmail()
+        .then(response => {
+          console.log(response);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    }
+  }
+};
+</script>
