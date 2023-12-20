@@ -1,0 +1,259 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<template>
+    <h2 class="l-heading text-center">
+        会社説明会に関するアンケート
+    </h2>
+
+    <div class="form-item-box">
+        <div class="label">
+            <span class="text">あなたのお名前とメールアドレスはいかがでしょうか？</span>
+            <span class="required">必須</span>
+        </div>
+        <p class="note">このアンケートは今後の情報提供を目的としており、結果は統計的に処理されます。<br>特定の個人が識別できる情報として、公表されることはありません。</p>
+        <div class="item">
+            <div class="input2-wrap">
+                <div class="label"><span class="text">お名前</span></div>
+                <input class="input-file" type="text" maxlength="20"/>
+            </div>
+        </div>
+        <div class="item mt-3">
+            <div class="input2-wrap">
+                <div class="label"><span class="text">フリガナ</span></div>
+                <input class="input-file" type="text" maxlength="20"/>
+            </div>
+        </div>
+        <div class="item mt-3">
+            <div class="input2-wrap">
+                <div class="label"><span class="text">メールアドレス</span></div>
+                <input class="input-file" type="text" maxlength="20"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-item-box">
+        <div class="label">
+            <span class="text">当社の会社説明会が開催されることを何から見聞きして知りましたか。すべてお知らせください。</span>
+            <span class="required">必須</span>
+        </div>
+        <p class="note">※複数選択可</p>
+        <div class="item">
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="当社のホームページ"/>当社のホームページ</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="就職・求人情報サイト"/>就職・求人情報サイト</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="SNS・ブログ"/>SNS・ブログ</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="その他のインターネットサイト"/>その他のインターネットサイト</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="合同説明会・合同就職セミナー"/>合同説明会・合同就職セミナー</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="当社の資料・パンフレット"/>当社の資料・パンフレット</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="インターンシップ"/>インターンシップ</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="学校の説明会"/>学校の説明会</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="学校の掲示物・配布物"/>学校の掲示物・配布物</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="学校の教職員"/>学校の教職員</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="学校の先輩（OB・OG）"/>学校の先輩（OB・OG）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="就職・求人関連の書籍や雑誌"/>就職・求人関連の書籍や雑誌</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="家族・友人・知人"/>家族・友人・知人</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="その他"/>その他</label>
+            </div>
+            <div class="checkbox-input-other">
+                <p class="note mb-0">※20文字以内で自由入力してください。</p>
+                <div class="input-wrap">
+                    <input type="text"/>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="error-text">選択してください。</div> -->
+    </div>
+
+    <div class="form-item-box">
+        <div class="label">
+            <span class="text">当社の会社説明会について、総合的にどのくらい満足していますか。</span>
+            <span class="required">必須</span>
+        </div>
+        <div class="item">
+            <div class="radio-wrap">
+                <label><input type="radio" name="satisfaction" value="満足"/>満足</label>
+            </div>
+            <div class="radio-wrap">
+                <label><input type="radio" name="satisfaction" value="やや満足"/>やや満足</label>
+            </div>
+            <div class="radio-wrap">
+                <label><input type="radio" name="satisfaction" value="どちらともいえない"/>どちらともいえない</label>
+            </div>
+            <div class="radio-wrap">
+                <label><input type="radio" name="satisfaction" value="やや不満"/>やや不満</label>
+            </div>
+            <div class="radio-wrap">
+                <label><input type="radio" name="satisfaction" value="不満"/>不満</label>
+            </div>
+            <!-- <div class="radio-row-wrap">
+                <div class="label">
+                    <label><input type="radio" name="satisfaction" value="満足"/>満足</label>
+                </div>
+                <div class="label">
+                    <label><input type="radio" name="satisfaction" value="やや満足"/>やや満足</label>
+                </div>
+                <div class="label">
+                    <label><input type="radio" name="satisfaction" value="どちらともいえない"/>どちらともいえない</label>
+                </div>
+                <div class="label">
+                    <label><input type="radio" name="satisfaction" value="やや不満"/>やや不満</label>
+                </div>
+                <div class="label">
+                    <label><input type="radio" name="satisfaction" value="不満"/>不満</label>
+                </div>
+            </div> -->
+            <div class="checkbox-input-other">
+                <p class="note mb-0">※当社の会社説明会に対して、前問のように回答した理由をお書きください。</p>
+                <div class="input-wrap">
+                    <input type="text"/>
+                </div>
+            </div>
+            <!-- <div class="error-text">選択してください。</div> -->
+        </div>
+    </div>
+
+    <div class="form-item-box">
+        <div class="label">
+            <span class="text">当社の会社説明会で、よかったと思うコンテンツをすべてお知らせください。</span>
+            <span class="required">必須</span>
+        </div>
+        <p class="note">※複数選択可</p>
+        <div class="item">
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（１）"/>コンテンツ（１）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（２）"/>コンテンツ（２）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（３）"/>コンテンツ（３）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（４）"/>コンテンツ（４）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（５）"/>コンテンツ（５）</label>
+            </div>
+        </div>
+        <!-- <div class="error-text">選択してください。</div> -->
+    </div>
+
+    <div class="form-item-box">
+        <div class="label">
+            <span class="text">当社の会社説明会で、改善すべきだと思うコンテンツをすべてお知らせください。</span>
+            <span class="required">必須</span>
+        </div>
+        <p class="note">※複数選択可</p>
+        <div class="item">
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（１）"/>コンテンツ（１）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（２）"/>コンテンツ（２）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（３）"/>コンテンツ（３）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（４）"/>コンテンツ（４）</label>
+            </div>
+            <div class="checkbox-wrap">
+                <label><input type="checkbox" value="コンテンツ（５）"/>コンテンツ（５）</label>
+            </div>
+        </div>
+        <!-- <div class="error-text">選択してください。</div> -->
+    </div>
+
+    <div class="form-item-box">
+        <div class="label">
+            <span class="text">現時点における当社への入社志望度をお知らせください。</span>
+            <span class="required">必須</span>
+        </div>
+        <div class="item">
+            <div class="radio-wrap">
+                <label><input type="radio" name="desire_join" value="第一志望"/>第一志望</label>
+            </div>
+            <div class="radio-wrap">
+                <label><input type="radio" name="desire_join" value="第二志望"/>第二志望</label>
+            </div>
+            <div class="radio-wrap">
+                <label><input type="radio" name="desire_join" value="第三志望"/>第三志望</label>
+            </div>
+            <div class="radio-wrap">
+                <label><input type="radio" name="desire_join" value="それ以下"/>それ以下</label>
+            </div>
+            <!-- <div class="error-text">選択してください。</div> -->
+        </div>
+    </div>
+
+    <div class="form-item-box">
+        <div class="label">
+            <span class="text">当社以外にエントリーしている企業、エントリーしようと思っている企業がございましたらお書きください。</span>
+        </div>
+        <div class="input2-wrap">
+            <div class="label"><span class="text">企業①</span></div>
+            <input type="text" class="input-file" maxlength="20"/>
+        </div>
+        <div class="input2-wrap mt-2">
+            <div class="label"><span class="text">企業②</span></div>
+            <input type="text" class="input-file" maxlength="20"/>
+        </div>
+        <div class="input2-wrap mt-2">
+            <div class="label"><span class="text">企業③</span></div>
+            <input type="text" class="input-file" maxlength="20"/>
+        </div>
+        <div class="input2-wrap mt-2">
+            <div class="label"><span class="text">企業④</span></div>
+            <input type="text" class="input-file" maxlength="20"/>
+        </div>
+        <div class="input2-wrap mt-2">
+            <div class="label"><span class="text">企業⑤</span></div>
+            <input type="text" class="input-file" maxlength="20"/>
+        </div>
+    </div>
+
+    <div class="form-item-box">
+        <div class="label">
+            <span class="text">当社の会社説明会に対してご意見・ご要望がございましたら、ご自由にお書きください。</span>
+        </div>
+        <div class="item item-pl px-0">
+            <div class="input-wrap">
+                <textarea name="comment" placeholder="ご意見・ご要望"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="submit-box form-item pb-5 mb-5">
+        <ul class="btn-horizontal d-flex justify-center">
+            <li>
+                <router-link to="/enquete/complete" class="l-btn-base l-btn-active">次へ進む</router-link>
+            </li>
+        </ul>
+        <!-- <div class="error-text">入力エラーがあります。入力内容を再度ご確認ください。</div> -->
+    </div>
+  </template>
