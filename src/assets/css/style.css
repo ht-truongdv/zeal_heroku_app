@@ -2474,3 +2474,8 @@ table td {
 .search-table-container {
     height: 52px;
 }
+
+.vue-star-rating {
+    font-weight: bold;
+    padding: 0.5rem;
+  }
