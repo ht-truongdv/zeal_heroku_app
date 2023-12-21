@@ -4,6 +4,9 @@ class TutorialDataService {
   getAll() {
     return http.get("/tutorials");
   }
+  sendEmail() {
+    return http.get("/tutorials/sendEmail");
+  }
 
   get(id) {
     return http.get(`/tutorials/${id}`);
