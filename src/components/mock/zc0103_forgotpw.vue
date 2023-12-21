@@ -1,8 +1,6 @@
 <template>
     <div class="l-inner l-inner-login">
         <h2 class="l-heading text-center">パスワードをお忘れですか?</h2>
-
-
         <div class="p-2">
             <ul class="list-unstyled">
                 <li>パスワードを初期化するには、ユーザ名を入力してください。</li>
